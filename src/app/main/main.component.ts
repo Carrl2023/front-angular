@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router, RouterOutlet } from '@angular/router';
 import { MatTabsModule } from '@angular/material/tabs';
+import { MatButtonModule } from '@angular/material/button';
 import { HomeComponent } from '../home/home.component';
 import { AboutComponent } from '../about/about.component';
 import { ProductosComponent } from '../productos/productos.component';
@@ -11,10 +12,11 @@ import { MatButton } from '@angular/material/button';
   imports: [
     RouterOutlet,
     MatTabsModule,
-     HomeComponent,
-    AboutComponent,
-    ProductosComponent,
-    MatButton,
+      MatButtonModule,
+      HomeComponent,
+      AboutComponent,
+      ProductosComponent,
+      MatButton,
   ],
   templateUrl: './main.component.html',
   styleUrl: './main.component.css'
